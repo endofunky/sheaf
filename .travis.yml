@@ -1,0 +1,22 @@
+language: ruby
+sudo: false
+cache: bundler
+script: rake test
+rvm:
+  - 2.2.0
+  - ruby-head
+  - jruby-head
+  - rbx-2
+matrix:
+  allow_failures:
+    - rvm: ruby-head
+    - rvm: jruby-head
+    - rvm: rbx-2
+  global:
+    - BUNDLE_JOBS=4
+before_install:
+  - bundle install --retry=3
+before_update:
+  - bundle update
+notifications:
+  email: false
