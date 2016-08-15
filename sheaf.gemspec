@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["tob@tobiassvensson.co.uk"]
   gem.summary       = %q{Immutable, composable, multi-purpose middleware stack for Ruby}
   gem.description   = gem.summary
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/endofunky/sheaf"
   gem.license       = "Apache License, Version 2.0"
 
   gem.files         = `git ls-files -z`.split("\x0")
